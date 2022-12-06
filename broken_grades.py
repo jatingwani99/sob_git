@@ -21,36 +21,33 @@
 
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_two = int(input("Input exam grade two: "))#int
 
-exam_3 = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: "))# three and int
 
-grades = [exam_one exam_two exam_three]
-sum = 0
-for grade in grade:
-  sum = sum + grade
-
-avg = sum / len(grdes)
+grade = ['exam_one','exam_two','exam_three']#"" and commas
+sum = (exam_one+exam_two+exam_three)
+avg = sum / len(grade)
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C'
+    letter_grade = "C"
 elif avg <= 69 and avg >= 65:
-    letter_grade = "D"
-elif:
-    letter_grade = "F"
-
-for grade in grades:
-    print("Exam: " + str(grade))
-
-    print("Average: " + str(avg))
-
-    print("Grade: " + letter_grade)
-
-if letter-grade is "F":
-    print "Student is failing."
+    letter_grade == "D"
 else:
-    print "Student is passing."
+    letter_grade == "F"
+
+for grade in grade:
+    print("Exam: " , grade)#remove str 
+
+    print("Average: " , avg)#remove int
+
+    print("Grade: " , letter_grade)
+
+if letter_grade =="F":
+    print ("Student is failing.")
+else:
+    print ("Student is passing.")#put brackets
